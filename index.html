@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 3</title>
+</head>
+<body>
+    <h2>Результат роботи Завдання 3:</h2>
+
+    <script>
+        let number = prompt('Введіть число з 3 цифр', '123');
+        let flipNum = 0;
+
+        if (number !== null && number !== '') {
+            document.write("Початкове число: " + number + "<br>");
+            
+            number = parseInt(number); // Перетворюємо рядок у число, щоб уникнути зависання
+
+            while (number > 0) {
+                let digit = number % 10;
+                number = parseInt(number / 10);
+                flipNum = flipNum * 10 + digit;
+            }
+
+            document.write("Обернуте число: " + flipNum);
+        } else {
+            document.write("Ви скасували введення або залишили поле порожнім.");
+        }
+    </script>
+</body>
+</html>
