@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квіткова Майстерня — Flores</title>
+    <style>
+        /* Базові стилі для всього сайту */
+        body {
+            font-family: 'Georgia', serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #fdf8f5; 
+            color: #2c3e2b; 
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .header-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #8c5353; 
+            text-decoration: none;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #2c3e2b;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #8c5353;
+        }
+
+        /* --- ГОЛОВНИЙ БАНЕР --- */
+        .hero {
+            background-color: #eae0d5; 
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .hero-image {
+            width: 500px;        /* Фотографія буде акуратною, шириною 500 пікселів */
+            height: auto;        /* Висота підлаштується автоматично, щоб фото не стискалося */
+            border-radius: 8px;  /* Заокруглені куточки */
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            color: #4a2c2c;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+        }
+
+        .btn {
+            background-color: #8c5353;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #6b3e3e;
+        }
+
+        /* --- СЕКЦІЯ ПРО НАШУ МАЙСТЕРНЮ --- */
+        .content {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .about-section {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-img {
+            flex: 1;
+            text-align: center;
+        }
+
+        /* ОСЬ ТУТ МИ ОБМЕЖУЄМО РОЗМІР ДРУГОГО ФОТО (БУКЕТА) */
+        .product-image {
+            width: 350px;        /* Ширина другого фото */
+            height: auto;        /* Пропорційна висота */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Красива легка тінь */
+        }
+
+        footer {
+            background-color: #2c3e2b;
+            color: #fdf8f5;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">🌸 Flores</a>
+            <nav>
+                <a href="index.html">Головна</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="delivery.html">Доставка</a>
+                <a href="contacts.html">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        
+        <h1>Свіжі квіти з доставкою за 1 годину</h1>
+        <p>Створюємо авторські букети, які дарують щирі емоції. Тільки свіжі зрізи та професійні флористи.</p>
+        <a href="catalog.html" class="btn">Обрати букет</a>
+    </section>
+<main class="content">
+        <div class="about-section">
+            <div class="about-text">
+                <h2>Про нашу майстерню</h2>
+                <p>Ми віримо, що квіти — це найкращий спосіб висловити почуття без слів. Наша команда ретельно відбирає кожну квітку, щоб ваш подарунок залишався свіжим якомога довше.</p>
+                <p>У нас ви знайдете як класичні троянди, так і екзотичні композиції для будь-якого приводу.</p>
+            </div>
+            
+            <div class="about-img">
+                <img src="flower1.jpg" class="product-image" alt="Букет троянд">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Квіткова майстерня "Flores". Усі права захищені.</p>
+    </footer>
+
+</body>
+</html>
